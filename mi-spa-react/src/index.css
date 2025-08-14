@@ -1,0 +1,245 @@
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #0002;
+  padding: 32px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 95vw;
+    padding: 18px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 100vw;
+    padding: 8px;
+    margin: 8px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0002;
+  }
+  h1 {
+    font-size: 1.3em;
+  }
+  .formulario {
+    gap: 8px;
+  }
+  table, th, td {
+    font-size: 13px;
+    padding: 6px;
+  }
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+  font-size: 16px;
+  transition: border-color 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+input:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 13px;
+  margin-top: -10px;
+  margin-bottom: 4px;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px #0001;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fafafa;
+  border-radius: 12px;
+  overflow: hidden;
+  min-width: 480px;
+}
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+th {
+  background: #1976d2;
+  color: #fff;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+.editar-btn {
+  background: #ffb300 !important;
+  color: #fff !important;
+  margin-right: 2px;
+  box-shadow: 0 1px 1px #ffb30044;
+}
+.editar-btn:hover {
+  background: #ffa000 !important;
+}
+.eliminar-btn {
+  background: #d32f2f !important;
+  color: #fff !important;
+  box-shadow: 0 1px 4px #d32f2f44;
+}
+.eliminar-btn:hover {
+  background: #b71c1c !important;
+}
+
+:root {
+  font-family: 'Segoe UI', Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #213547;
+  background: linear-gradient(120deg, #e3f2fd 0%, #fce4ec 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: none;
+}
+
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.8em 1.4em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #1976d2;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #1976d244;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+button:hover {
+  background: #1565c0;
+  box-shadow: 0 4px 16px #1976d244;
+  transform: translateY(-2px) scale(1.03);
+}
+button:focus,
+button:focus-visible {
+  outline: 3px auto #1976d2;
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #0002;
+  padding: 32px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+input:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 13px;
+  margin-top: -10px;
+  margin-bottom: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fafafa;
+  box-shadow: 0 1px 8px #0001;
+  border-radius: 12px;
+  overflow: hidden;
+}
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+th {
+  background: #1976d2;
+  color: #fff;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+.editar-btn {
+  background: #ffb300 !important;
+  color: #fff !important;
+  margin-right: 0x;
+  box-shadow: 0 1px 4px #ffb30044;
+}
+.editar-btn:hover {
+  background: #ffa000 !important;
+}
+.eliminar-btn {
+  background: #d32f2f !important;
+  color: #fff !important;
+  box-shadow: 0 1px 1px #d32f2f44;
+}
+.eliminar-btn:hover {
+  background: #b71c1c !important;
+}
